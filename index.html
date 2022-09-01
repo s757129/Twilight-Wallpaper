@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            maximum-scale=1, user-scalable=no">
+        <title>暮光壁纸APP下载 - 暮光工作室</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            />
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+    </head>
+
+    <body>
+        <div id="root" class="container-fluid">
+
+            <!--应用下载-->
+            <div class="module appd">
+                <img class="logo" :src="logo">
+                <h3>{{name}}</h3>
+                <p>版本:&nbsp;{{version}}&nbsp;&nbsp;大小:&nbsp;{{volume}}<br>时间:&nbsp;{{time}}</p>
+                <a target="_blank" v-for="(d,appdown) of download"
+                    :key="appdown" :href="d.url">
+                    <button class="btn btn-outline-primary">{{d.name}}</button>
+                </a>
+            </div>
+            <!--应用截图-->
+            <div class="module">
+                <div class="title"><span class="bg-primary"></span>应用截图</div>
+                <div class="card container">
+                    <div class="screenshot">
+                        <img v-for="(s,apppre) of screenshot" :key="apppre"
+                            :src="s.image">
+                    </div>
+                </div>
+            </div>
+            <!--应用介绍-->
+            <div class="module">
+                <div class="title"><span class="bg-primary"></span>应用介绍</div>
+                <div class="card">
+                    <span>{{introduction}}</span>
+                </div>
+            </div>
+            <!--更新日志-->
+            <div class="module">
+                <div class="title"><span class="bg-primary"></span>更新日志</div>
+                <div class="card">
+                    <span v-for="(u,updlog) of update" :key="updlog">{{u.log}}</span>
+                </div>
+            </div>
+            <!--历史版本-->
+            <div class="module apph">
+                <div class="title"><span class="bg-primary"></span>历史版本</div>
+                <div class="card">
+                    <span v-for="(h,hisapp) of history" :key="hisapp">
+                        版本:&nbsp;{{h.version}}&nbsp;&nbsp;大小:&nbsp;{{h.volume}}<br>
+                        时间:&nbsp;{{h.time}}&nbsp;&nbsp;
+                        <a target="_blank" class="card-link" :href="h.url">下载</a>
+                    </span>
+                </div>
+            </div>
+            <!--友情链接-->
+            <div class="module">
+                <div class="title"><span class="bg-primary"></span>友情链接</div>
+                <div class="card">
+                    <a target="_blank" class="card-link" v-for="(f,link) of friend" :key="link" :href="f.url">{{f.name}}</a>
+                </div>
+            </div>
+
+            <div class="footer">
+                &copy;&nbsp;2021-present&nbsp;暮光工作室
+            </div>
+
+        </div>
+    </body>
+
+    <script src="./assets/js/vue.js"></script>
+
+</html>
