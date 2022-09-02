@@ -15,7 +15,7 @@ const vm = new Vue({
                 },
                 {
                     name: '备用下载',
-                    url: './old'
+                    url: '/'
                 }
             ],
             screenshot: [
@@ -45,23 +45,33 @@ const vm = new Vue({
                 {
                     log: '1. 优化应用功能布局，优化架构、响应速度'
                 },
-                { 
-                    log: '2. 修改了壁纸预览、头像预览的界面' 
+                {
+                    log: '2. 修改了壁纸预览、头像预览的界面'
                 },
-                { 
-                    log: '3. 各搜索壁纸头像功能整合成为聚合搜图' 
+                {
+                    log: '3. 各搜索壁纸头像功能整合成为聚合搜图'
                 },
-                { 
-                    log: '4. 壁纸大全聚合了不同的10个接口' 
+                {
+                    log: '4. 壁纸大全聚合了不同的10个接口'
                 },
-                { 
-                    log: '5. 新增哔哩哔哩解析功能' 
+                {
+                    log: '5. 新增哔哩哔哩解析功能'
                 },
-                { 
-                    log: '6. 各界面统一布局，界面更加美观' 
+                {
+                    log: '6. 各界面统一布局，界面更加美观'
                 },
                 {
                     log: '7. 已将MiSans删减版字体改用Material Design字体'
+                }
+            ],
+            connect: [
+                {
+                    name: '联系作者',
+                    url: 'http://wpa.qq.com/msgrd?v=3&uin=2858727468&site=qq&menu=yes'
+                },
+                {
+                    name: '加入Q群',
+                    url: 'https://jq.qq.com/?_wv=1027&k=RYIloXIj'
                 }
             ],
             history: [
@@ -72,16 +82,16 @@ const vm = new Vue({
                     url: 'https://wwa.lanzoui.com/itWwd05exy7e'
                 },
                 {
-                    version: '2.2.24',
+                    version: '2.1.4',
                     volume: '15.78MB',
-                    time: '2022-02-24',
+                    time: '2021-11-11',
                     url: '/'
                 }
             ],
-            friend:[
+            friend: [
                 {
-                    name:'柒伍七の鱼',
-                    url:'https://s757129.github.io'
+                    name: '柒伍七の鱼',
+                    url: 'https://s757129.github.io'
                 }
             ]
         }
