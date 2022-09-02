@@ -24,8 +24,7 @@
                 <img class="logo" :src="logo">
                 <h3>{{name}}</h3>
                 <p>版本:&nbsp;{{version}}&nbsp;&nbsp;大小:&nbsp;{{volume}}<br>时间:&nbsp;{{time}}</p>
-                <a target="_blank" v-for="(d,appdown) of download"
-                    :key="appdown" :href="d.url">
+                <a target="_blank" v-for="(d,appdown) of download" :key="appdown" :href="d.url">
                     <button class="btn btn-outline-primary">{{d.name}}</button>
                 </a>
             </div>
@@ -62,6 +61,15 @@
                         时间:&nbsp;{{h.time}}&nbsp;&nbsp;
                         <a target="_blank" class="card-link" :href="h.url">下载</a>
                     </span>
+                </div>
+            </div>
+            <!--商务合作-->
+            <div class="module appc">
+                <div class="title"><span class="bg-primary"></span>商务合作</div>
+                <div class="card">
+                    <span><a target="_blank" v-for="(c,touch) of connect" :key="touch" :href="c.url">
+                        <button class="btn btn-outline-primary">{{c.name}}</button>
+                    </a></span>
                 </div>
             </div>
             <!--友情链接-->
