@@ -7,7 +7,7 @@ body {
     background: #eeeeee;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -87,12 +87,16 @@ a:hover {
     margin: auto 5px;
 }
 
-.apph .card span{
+.apph .card span {
     margin: 10px 0;
 
 }
 
-.footer{
+.appc .card span a {
+    margin: 0 5px;
+}
+
+.footer {
     text-align: center;
     padding: 10px;
 }
